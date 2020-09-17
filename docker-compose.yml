@@ -1,0 +1,63 @@
+version: '3'
+services:
+  # backend:
+  #   build: ./backend
+  #   volumes:
+  #     - ./backend:/app
+  #   ports:
+  #     - "4433:4433"
+  #   stdin_open: true
+  #   tty: true
+  #   environment:
+  #     - MONGO_URL=mongodb://mongo_user:this_is_a_safe_password@0.0.0.0:27017/ 
+  #     - FLASK_APP=app/http/api/endpoints.py 
+  #     - FLASK_ENV=development
+  #   command: python3 -m app/http/api/endpoints.py
+  # frontend:
+  #   build: ./frontend
+  #   volumes:
+  #     - ./frontend:/app/frontend
+  #     # One-way volume to use node_modules from inside image
+  #     - /app/frontend/node_modules
+  #   ports:
+  #     - "3001:3001"
+  #   environment:
+  #     - NODE_ENV=development
+  #     - PORT=3001
+  #   depends_on:
+  #     - backend
+  #   command: yarn start
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+     - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo_user
+      MONGO_INITDB_ROOT_PASSWORD: this_is_a_safe_password
+  database:
+    image: postgres:11.6-alpine
+    environment:
+      - POSTGRES_USER=codimd
+      - POSTGRES_PASSWORD=change_password
+      - POSTGRES_DB=codimd
+    volumes:
+      - "database-data:/var/lib/postgresql/data"
+    restart: always
+  codimd:
+    image: nabo.codimd.dev/hackmdio/hackmd:2.2.0
+    environment:
+      - CMD_DB_URL=postgres://codimd:change_password@database/codimd
+      - CMD_USECDN=false
+      - CMD_ALLOW_ANONYMOUS=true
+      - CMD_ALLOW_FREEURL=true
+    depends_on:
+      - database
+    ports:
+      - "3000:3000"
+    volumes:
+      - upload-data:/home/hackmd/app/public/uploads
+    restart: always
+volumes:
+  database-data: {}
+  upload-data: {}
