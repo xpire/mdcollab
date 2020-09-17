@@ -63,5 +63,3 @@ def delete(category, task):
 
 def json_response(payload, status=200):
     return (json.dumps(payload), status, {'content-type': 'application/json'})
-
-app.run(host = "0.0.0.0", port = 4433)

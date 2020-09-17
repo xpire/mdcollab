@@ -3,7 +3,7 @@ import {TaskData} from '../components/Kanban/TaskData'
 
 
 export const CODIMD_URL = 'http://0.0.0.0:3000'
-export const BACKEND_URL = 'http://127.0.0.1:4433'
+export const BACKEND_URL = 'http://0.0.0.0:4433'
 
 // export const generatePage = () => { 
 //     fetch(`${CODIMD_URL}/new`, {
