@@ -1,18 +1,17 @@
 version: '3'
 services:
   # backend:
-  #   build: ./backend
+  #   build: ./api
   #   volumes:
-  #     - ./backend:/app
+  #     - ./api:/api
   #   ports:
   #     - "4433:4433"
   #   stdin_open: true
   #   tty: true
-  #   environment:
-  #     - MONGO_URL=mongodb://mongo_user:this_is_a_safe_password@0.0.0.0:27017/ 
-  #     - FLASK_APP=app/http/api/endpoints.py 
-  #     - FLASK_ENV=development
-  #   command: python3 -m app/http/api/endpoints.py
+    # environment:
+    #   - MONGO_URL=mongodb://mongo_user:this_is_a_safe_password@0.0.0.0:27017/ 
+    #   - FLASK_APP=api/endpoints.py 
+    #   - FLASK_ENV=development
   # frontend:
   #   build: ./frontend
   #   volumes:
