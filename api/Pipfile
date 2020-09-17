@@ -6,6 +6,11 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+flask = "*"
+marshmallow = "*"
+pymongo = "*"
+pyjwt = "*"
+flask-cors = "*"
 
 [requires]
 python_version = "3.8"

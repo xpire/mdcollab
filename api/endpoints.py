@@ -1,7 +1,9 @@
+from __future__ import absolute_import, print_function
+
 from .middleware import login_required
+from .backend.service import Service as Backend
+from .backend.schema import TaskSchema
 from flask import Flask, json, g, request
-from backend.service import Service as Backend
-from backend.schema import TaskSchema
 from flask_cors import CORS
 
 app = Flask(__name__)

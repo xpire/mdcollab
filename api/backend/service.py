@@ -1,5 +1,4 @@
-from repository import Repository
-from repository.mongo import MongoRepository
+from .mongo import Repository, MongoRepository
 from .schema import TaskSchema
 
 class Service(object):
