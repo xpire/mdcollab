@@ -65,6 +65,8 @@ The frontend code lies in the `frontend` folder, with source code fo components 
 
 The frontend was served in the same server as the rest of the application with the goal of using relative api links to simplify and decouple this project from where it was hosted. However, this was not attainable before the CTF started, so I ultimately used absolute URL paths to the API and codimd server. The added benefit, and future improvement, is to host the front end from `github-pages` and have one less deployment here, as the frontend is majorly a static SPA. 
 
+Currently, the front end is served from port `3001`.
+
 ## Backend: codimd
 
 This is deployed via `docker-compose`. I used an existing open-source application to store the markdown files. Documentation can be found at:
@@ -73,11 +75,15 @@ This is deployed via `docker-compose`. I used an existing open-source applicatio
 
 I've used both ways, and currently it is using the first way.
 
+Currently, this is running from its default port of `3000`.
+
 ## Backend: mongo flask
 
 - The mongo database is currently deployed through the `docker-compose` file. 
 - A flask application serves the API, and communicates locally with the mongo DB instance.
 - This stores the state of the main Board page, so that views are synced between users of the application.
+
+Currently, the flask server is running from port `4433`.
 
 ### Folder structure
 
