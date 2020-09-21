@@ -8,7 +8,7 @@ This is a quick project I made to help with doing CTFs. Previously I had probabl
 - [Inspiration](#inspiration)
 - [Frontend: React](#frontend-react)
 - [Backend: codimd](#backend-codimd)
-- [Backend: mongo+flask](#backend-mongo+flask)
+- [Backend: mongo+flask](#backend-mongo-flask)
 - [API Documentation](#api-documentation)
 - [Usage](#usage)
 - [Improvements](#improvements)
@@ -73,7 +73,7 @@ This is deployed via `docker-compose`. I used an existing open-source applicatio
 
 I've used both ways, and currently it is using the first way.
 
-## Backend: mongo+flask
+## Backend: mongo flask
 
 - The mongo database is currently deployed through the `docker-compose` file. 
 - A flask application serves the API, and communicates locally with the mongo DB instance.
