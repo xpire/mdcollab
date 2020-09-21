@@ -141,11 +141,12 @@ To cleanup:
 
 ## Improvements
 
-- bootstrap and serve frontend & flask backend with the `docker-compose` file.
-- add documentation for backend API
-- Host frontend as a SPA, maybe through `gh-pages`.
-- consolidate all APIs into `frontend/src/hooks/function.ts`
-- add stateful dark mode to `frontend/src/theme/ThemeProvider.tsx`
+- [ ] bootstrap and serve frontend & flask backend with the `docker-compose` file.
+- [ ] add documentation for backend API
+- [ ] Host frontend as a SPA, maybe through `gh-pages`.
+  - [ ] Settings page to set the server you want to connect to and have mdcollab be completely statically hosted so no need to host your own frontend. ("Authenticate" with the server you are hosting the backend and codimd at)
+- [ ] consolidate all APIs into `frontend/src/hooks/function.ts`
+- [ ] add stateful dark mode to `frontend/src/theme/ThemeProvider.tsx`
 
 ## License
 
