@@ -17,7 +17,7 @@ This is a quick project I made to help with doing CTFs. Previously I had probabl
 
 ## Inspiration
 
-The day was Monday, and I was watching one of a youtube video by [liveoverflow](https://youtu.be/Tw7ucd2lKBk?t=53) where he was going through a challenge from a past CTF. However, the thing that piqued my interest the most was the collaboration tool he showcased, that was a closed-source upgraded alternative to [CTFpad](https://github.com/StratumAuhuur/CTFPad). I thought this idea had so much potential, and that seeing that I had a CTF of my own at the end the week, I decided to try my luck and implementing this. This project turned out way harder than I thought it would be.
+The day was Monday, and I was watching one of a youtube video by [liveoverflow](https://youtu.be/Tw7ucd2lKBk?t=53) where he was going through a challenge from a past CTF. However, the thing that piqued my interest the most was the collaboration tool he showcased, that was a closed-source upgraded alternative to [CTFpad](https://github.com/StratumAuhuur/CTFPad). I thought this idea had so much potential, and seeing that I had a CTF of my own at the end of the week, I decided to try my luck and implement this. This project turned out way harder than I thought it would be.
 
 ## Frontend: React
 
@@ -58,7 +58,7 @@ The frontend code lies in the `frontend` folder, with source code fo components 
 
 - In the `components` folder, `Pages` consists of React Components that render a single page. Everything else is a normal React Component.
 - Routing is done inside `App.tsx`
-- API calls to backend are in `hooks/function.ts` or are done from within the component itself. The only exception is the GET call is inside `BoardPage.tsx`, as it needs to show data.
+- API calls to the backend are in `hooks/function.ts` or are done from within the component itself. The only exception is the GET call is inside `BoardPage.tsx`, as it needs to show data.
 - Theming is in `theme/ThemeProvider.tsx`.
 
 ### Note about hosting
