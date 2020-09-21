@@ -1,6 +1,6 @@
-# mlcollab
+# mdcollab
 
-This is a quick project I made to help with doing CTFs. Previously I had probably used a combination of discord and messenger to discuss flags and share screen - however, I had always wished there was a better way to communicate and share information with my team. Thus I made my own. This project is essentially a Kanban board of tasks with links to a collaborative markdown page with support for live collaboration.
+This is a project I made to help with doing CTFs. Previously I had probably used a combination of discord and messenger to discuss flags and share screen - however, I had always wished there was a better way to communicate and share information with my team. Thus I made my own. This project is essentially a Kanban board of tasks with links to a collaborative markdown page with support for live collaboration.
 
 
 ## Contents
