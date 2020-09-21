@@ -1,9 +1,12 @@
 import axios from 'axios'
 import {TaskData} from '../components/Kanban/TaskData'
 
+const HOST = 'A.B.C.D'
+export const CODIMD_URL = `http://${HOST}:3000`
+export const BACKEND_URL = `http://${HOST}:4433`
 
-export const CODIMD_URL = 'http://0.0.0.0:3000'
-export const BACKEND_URL = 'http://0.0.0.0:4433'
+// export const CODIMD_PATH = '/codimd'
+// export const BACKEND_PATH = ['/task', '/tasks']
 
 // export const generatePage = () => { 
 //     fetch(`${CODIMD_URL}/new`, {
