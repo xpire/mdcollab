@@ -148,10 +148,12 @@ To cleanup:
 ## Improvements
 
 - [ ] bootstrap and serve frontend & flask backend with the `docker-compose` file.
+- [ ] Add unit tests for frontend React SPA
+- [ ] Add unit tests for python flask backend.
 - [ ] add documentation for backend API
+- [ ] consolidate all APIs into `frontend/src/hooks/function.ts`, using relative url paths to decouple application from hosting server.
 - [ ] Host frontend as a SPA, maybe through `gh-pages`.
-  - [ ] Settings page to set the server you want to connect to and have mdcollab be completely statically hosted so no need to host your own frontend. ("Authenticate" with the server you are hosting the backend and codimd at)
-- [ ] consolidate all APIs into `frontend/src/hooks/function.ts`
+  - [ ] Settings page to set the server you want to connect to and have mdcollab be completely statically hosted so no need to host your own frontend. (~~"Authenticate" with the server you are hosting the backend and codimd at~~ Actually this might cause issues with XSS so it should be deployed by the user) 
 - [ ] add stateful dark mode to `frontend/src/theme/ThemeProvider.tsx`
 
 ## License
